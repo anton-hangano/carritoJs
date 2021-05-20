@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="tienda.js" async></script>
+    <title>Carrito de compras</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Tu-Electrodomestico</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Promociones</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Nosotros
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Busque su producto" aria-label="Search">
+              <button class="btn btn-danger me-2" type="submit">Buscar</button>
+        </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <main>
+
+
+
+      <div class= "d-flex justify-content-evenly align-content-end flex-wrap d-grid gap-3 mt-5" >
+
+        <div class="card" style="width: 18rem; height: 39rem;" id="Iphone">
+            <img src="Carrito/Imagenes/P001.jpg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body">
+              <h5 class="shop-item-title">Iphone</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item shop-item-price">$700</li>
+            </ul>
+            <div class="card-body">
+              <button id="agregarIphone" class="btn btn-primary btn-agregar shop-item-button">Agregar</button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 39rem" id="Ipad">
+            <img src="Carrito/Imagenes/P002.jpg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body">
+              <h5 class="shop-item-title">Ipad</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item shop-item-price">$650</li>
+
+            </ul>
+            <div class="card-body">
+              <button id="agregarIpad" class="btn btn-primary btn-agregar shop-item-button">Agregar</button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 39rem" id="Iwatch">
+            <img src="Carrito/Imagenes/P003.jpg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body">
+              <h5 class="shop-item-title">Iwatch</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item shop-item-price">$450</li>
+
+            </ul>
+            <div class="card-body">
+              <button id="agregarIwatch" class="btn btn-primary btn-agregar shop-item-button">Agregar</button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 39rem" id="Led">
+            <img src="Carrito/Imagenes/P004.jpeg" height= "286" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body">
+              <h5 class="shop-item-title">LED TV</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item shop-item-price">$390</li>
+
+            </ul>
+            <div class="card-body">
+              <button id="agregarLed" class="btn btn-primary btn-agregar shop-item-button">Agregar</button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 39rem" id="Heladera">
+            <img src="Carrito/Imagenes/P005.jpeg" height= "286" width= "286" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body">
+              <h5 class="shop-item-title">Heladera</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item shop-item-price">$350</li>
+
+            </ul>
+            <div class="card-body">
+              <button id="agregarHeladera" class="btn btn-primary btn-agregar shop-item-button">Agregar</button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 39rem" id="Lavaropa">
+            <img src="Carrito/Imagenes/P006.jpeg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body">
+              <h5 class="shop-item-title">Lavaropa</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item shop-item-price">$420</li>
+
+            </ul>
+            <div class="card-body">
+              <button id="agregarLavaropa" class="btn btn-primary btn-agregar shop-item-button">Agregar</button>
+            </div>
+          </div>
+
+          <section class="container content-section">
+            <h2 class="section-header">CARRITO</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRECIO</span>
+                <span class="cart-quantity cart-header cart-column">CANTIDAD</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">COMPRAR</button>
+        </section>
+        </div> 
+        
+    </main>
+    <footer class="navbar navbar-expand-lg navbar-dark bg-primary" style="height: 50px;"></footer>
+        
+    
+</body>
+</html>
